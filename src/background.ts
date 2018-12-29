@@ -1,7 +1,7 @@
 'use strict';
 
 import { app, protocol, BrowserWindow } from 'electron';
-// import App from './server/renderder';
+import App from './server/renderder';
 
 import {
   createProtocol,
@@ -33,8 +33,8 @@ function createWindow() {
     win = null;
   });
 
-  // const appInstance = new App();
-  // console.log(appInstance);
+  const appInstance = new App();
+  console.log(appInstance);
 }
 
 // Quit when all windows are closed.
